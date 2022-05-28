@@ -26,3 +26,38 @@ prevailing_wage: Average wage paid to similarly employed workers in a specific o
 unit_of_wage: Unit of prevailing wage. Values include Hourly, Weekly, Monthly, and Yearly.
 full_time_position: Is the position of work full-time? Y = Full Time Position; N = Part Time Position
 case_status: Flag indicating if the Visa was certified or denied
+
+Tools used
+•	Python: XGBoost
+•	Numpy library for computation
+•	Seaborn library for informative statistical graphs
+•	Matplotib for interactive visualizations
+•	Sklearn: sklearn.model_selection, sklearn.ensemble, sklearn.tree, sklearn.metrics
+•	Models: DecisionTreeClassifier, RandomForestClassifier, BaggingClassifier, AdaBoostClassifier, GradientBoostingClassifier, XGBClassifier, and StackingClassifier
+•	Hyperparameter tuning
+
+Project Coverage
+Analyze the data provided and with the help of a classification model facilitate the process of visa approvals, and recommend a suitable profile for the applicants for whom the visa should be certified or denied based on the drivers that significantly influence the case status
+Tasks Performed
+•	Data Preparation
+•	Model evaluation criteria
+•	Create functions to calculate different metrics and confusion matrix on training set and test set
+•	Create Models: Decision Tree, Bagging Classifier, Random Forest, AdaBoost Classifier, Gradient Boosting, XG Boost, XG Boost Classifier, Stacking Classifier
+•	Hyperparameter Tuning: Decision Tree, Bagging Classifier, Random Forest, AdaBoost Classifier, Gradient Boosting, XG Boost, XG Boost Classifier
+
+Business Insights
+The profile of the applicants for whom the visa status can be denied:
+Primary information to look at:
+•	Education level - Doesn't have any degree and has completed high school.
+•	Job Experience - Doesn't have any job experience.
+•	Prevailing wage - The median prevailing wage of the employees for whom the visa got certified is around 65k.
+Secondary information to look at:
+•	Unit of Wage - Applicants having an hourly unit of wage.
+•	Continent - Ideally the nationality and ethnicity of an applicant shouldn't matter to work in a country but previously it has been observed that applicants from South America, North America, and Oceania have higher chances of visa applications getting denied.15
+
+
+
+
+
+
+
